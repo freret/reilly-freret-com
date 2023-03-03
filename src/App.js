@@ -1,21 +1,35 @@
-import { version, Component } from 'inferno';
-import Logo from './logo';
-import './App.css';
+import { Component } from 'inferno';
+import { BrowserRouter, Route, Switch } from 'inferno-router';
+import PlatformProSupport from './platform-pro/support'
+import PageNotFound from './404';
+import Layout from './layout';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <Logo width="80" height="80" />
-          <p>{`Welcome to Inferno ${version}`}</p>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        </header>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          {/* <Layout> */}
+            <RouteWrapper path="/platformpro" component={PlatformProSupport} layout={Layout}/>
+            <RouteWrapper component={PageNotFound} layout={Layout}/>
+          {/* </Layout> */}
+        </Switch>
+      </BrowserRouter>
     );
   }
+}
+
+function RouteWrapper({ component: Component, layout: Layout, ...rest }) {
+  return (
+    <Route
+      {...rest}
+      render={(props) => (
+        <Layout {...props}>
+          <Component {...props} />
+        </Layout>
+      )}
+    />
+  );
 }
 
 export default App;
