@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.18.2",
+    "express-favicon": "^2.0.4",
     "inferno": "^8.0.6",
     "inferno-router": "^8.0.6",
-    "inferno-scripts": "7.0.4"
+    "inferno-scripts": "7.0.4",
+    "path": "^0.12.7"
   },
   "scripts": {
-    "start": "inferno-scripts start",
+    "dev": "inferno-scripts start",
+    "start": "node server.js",
     "build": "inferno-scripts build",
     "test": "inferno-scripts test",
     "eject": "inferno-scripts eject"
