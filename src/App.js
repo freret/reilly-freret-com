@@ -1,6 +1,6 @@
 import { Component } from 'inferno';
 import { BrowserRouter, Switch } from 'inferno-router';
-import PlatformProSupport from './platform-pro/support'
+import PlatformProSupport from './platform-pro/index'
 import PageNotFound from './404';
 import RouteWrapper from './utils/routeWrapper';
 import Home from './Home';
