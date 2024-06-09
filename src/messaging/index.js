@@ -20,10 +20,10 @@ export default function Messaging() {
             <form onSubmit={handleSubmit} id="mainForm">
                 <label>
                     Message:
-                    <input type="text" id="messageInput" maxLength={25} style={{"margin-left": "10px"}}/>
+                    <input type="text" id="messageInput" maxLength={220} style={{"margin-left": "10px"}} size={50}/>
                 </label>
                 <button formAction={'submit'} style={{"margin-left": "10px"}}>Send</button>
-                <p style={{"font-size": "small", color: "gray", "font-style": "italic"}}>Fewer than 25 characters, no emoji yet :(</p>
+                <p style={{"font-size": "small", color: "gray", "font-style": "italic"}}>Fewer than 220 characters, no emoji yet :(</p>
             </form>
         </>
     )
