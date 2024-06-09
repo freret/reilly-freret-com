@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "express": "^4.18.2",
+    "express": "^4.19.2",
     "express-favicon": "^2.0.4",
-    "inferno": "^8.0.6",
-    "inferno-router": "^8.0.6",
-    "inferno-scripts": "7.0.4",
+    "inferno": "^8.2.3",
+    "inferno-router": "^8.2.3",
+    "inferno-scripts": "^8.0.20",
+    "mqtt": "^5.7.0",
     "path": "^0.12.7"
   },
   "scripts": {
@@ -27,6 +28,6 @@
     "not op_mini all"
   ],
   "engines": {
-    "node": "16.x"
+    "node": "22.x"
   }
 }
