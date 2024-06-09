@@ -4,6 +4,7 @@ import PlatformProSupport from './platform-pro/index'
 import PageNotFound from './404';
 import RouteWrapper from './utils/routeWrapper';
 import Home from './Home';
+import Messaging from './messaging';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Switch>
           <RouteWrapper exact path="/" component={Home} />
           <RouteWrapper path="/platformpro" component={PlatformProSupport} />
+          <RouteWrapper path="/messaging" component={Messaging} />
           <RouteWrapper component={PageNotFound} />
         </Switch>
       </BrowserRouter>
