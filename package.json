@@ -28,6 +28,6 @@
     "not op_mini all"
   ],
   "engines": {
-    "node": "22.x"
+    "node": "20.x"
   }
 }
