@@ -11,7 +11,7 @@ export default function Home() {
       <h2>Currently</h2>
       <p>software and devops engineer at <a href={"https://www.bgcpartners.com/"} target="_blank">bgc partners</a></p>
       <p>creator/maintainer of <Link to={"/platformpro"}>platform pro</Link></p>
-      <p>playing around with a <Link to={"/billboard"}>better* version of Tidbyt</Link></p>
+      <p>tinkerer on a <Link to={"/billboard"}>better* version of Tidbyt</Link></p>
       <p style={{"font-style": "italic", color: "gray"}}>*subjective, I guess</p>
 
       <h2>Recently</h2>
