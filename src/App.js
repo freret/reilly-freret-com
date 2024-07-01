@@ -5,6 +5,7 @@ import PageNotFound from './404';
 import RouteWrapper from './utils/routeWrapper';
 import Home from './Home';
 import Messaging from './messaging';
+import Billboard from './billboard';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <RouteWrapper exact path="/" component={Home} />
           <RouteWrapper path="/platformpro" component={PlatformProSupport} />
           <RouteWrapper path="/messaging" component={Messaging} />
+          <RouteWrapper path="/billboard" component={Billboard} />
           <RouteWrapper component={PageNotFound} />
         </Switch>
       </BrowserRouter>
