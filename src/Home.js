@@ -14,10 +14,10 @@ export default function Home() {
       <h2>Recently</h2>
       <p>co-founder and head of engineering at <a href={"https://www.sobrietyhub.com/"} target="_blank">sobriety hub</a></p>
       <p>software and devops engineer at <a href={"https://www.bgcpartners.com/"} target="_blank">bgc partners</a></p>
-      <p>creator/maintainer of <Link to={"/platformpro"}>platform pro</Link></p>
-      <p>tinkerer on a <Link to={"/billboard"}>better* version of Tidbyt</Link></p>
+      {/* <p>creator/maintainer of <Link to={"/platformpro"}>platform pro</Link></p>
+      <p>tinkerer on a <Link to={"/billboard"}>better* version of Tidbyt</Link></p> */}
       <p>b.s. in computer science from <a href={"https://cse.wustl.edu/index.html"} target="_blank">wash u in st. louis</a></p>
-      <p style={{"font-style": "italic", color: "gray"}}>*subjective, I guess</p>
+      {/* <p style={{"font-style": "italic", color: "gray"}}>*subjective, I guess</p> */}
     </>
   )
 }
